@@ -1,6 +1,4 @@
 import random
-from tarfile import LENGTH_LINK
-
 
 def get_valid_int(text, min_value=1):
     while True:
