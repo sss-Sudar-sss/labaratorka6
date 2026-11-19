@@ -5,7 +5,7 @@ def get_valid_int(text, min_value=1):
         try:
             value=int(input(text))
             if value < min_value:
-                print("Число не может быть меньше 1")
+                print(f"Число не может быть меньше {min_value}")
                 continue
             return value
         except ValueError:
@@ -24,7 +24,7 @@ def task_1():
         matrix_A.append(row)
     print("Исходный список А:")
     for row in matrix_A:
-        print((row))
+        print(row)
     list_S=[]
     for i in range(N):
         row_sum=0
@@ -36,7 +36,7 @@ def task_1():
 def task_2():
     print("Задание 2")
     colors_dict={  "red": "красный", "green": "зеленый", "blue": "синий", "yellow": "желтый", "black": "черный", "white": "белый", "orange": "оранжевый"}
-    print("1) Весь вловарь:")
+    print("1) Весь словарь:")
     for eng,rus in colors_dict.items():
         print(f"{eng}:{rus}")
     print("2) Вывод перевода последнего слова:")
